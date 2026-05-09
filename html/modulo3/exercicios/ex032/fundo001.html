@@ -2,19 +2,40 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/style.css">
-    <title>Testando imagens de fundo</title>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Testando imagens de fundo</title>   
+    
+    <style>
+        div#quadrado{
+            border: 2px solid black;
+            width: 300px;
+            height: 300px;
+            margin: 5px;
+
+            display: inline-block;
+        }
+        div.q1{
+            background-color: blue;
+        }
+        div.q2{
+            background-image: linear-gradient(to bottom, yellow, darkred);
+        }
+        div.q3{
+            background-image: url('imagens/pattern001.png');
+        }
+        body{
+            background-image: url('imagens/wallpaper001.jpg');
+        }
+    </style>
 </head>
 <body>
     <h1>Tipos de imagens de fundo</h1>
+    <p>3 maneiras de adicionar imagens de fundo em um site</p>    
 
     <div id="quadrado" class="q1"></div>
 
     <div id="quadrado" class="q2"></div>
 
     <div id="quadrado" class="q3"></div>
-
-    <div id="quadrado" class="q4"></div>
 </body>
 </html>
