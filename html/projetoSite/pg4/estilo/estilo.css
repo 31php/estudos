@@ -20,3 +20,87 @@
     margin: 0px;
     padding: 0px;
 }
+header{
+    background-color: var(--cor0);
+    color: white;
+    padding: 30px;    
+
+    text-align: center;
+}
+header h1{
+    font-family: fonteTitulo;
+    margin-bottom: 10px;
+}
+header p{
+    font-family: fonteTitulo;
+}
+
+nav{
+    background-color: var(--cor0);       
+}
+nav > a{
+    color: white; 
+    padding: 3px;
+    margin-right: 7px;
+    margin-left:2px;
+
+    font: normal bold 16px var(--fontConteudo);
+
+    text-decoration: none;      
+}
+nav > a:hover{
+    text-decoration: underline;
+    font: italic bold 18px var(--fontConteudo);
+
+    transition-duration: 0.2s;
+    background-color: var(--cor2);
+    border-radius: 5px;
+}
+main{
+    padding: 10px;
+}
+main section p{
+    text-align: justify;
+    margin: 10px;
+
+}
+section.normal{
+    background-color: white;
+    color: black;
+   
+}
+section#img01{
+    background-image: url('../imagens/goku156px.png');
+    background-position: center right;
+    background-repeat: no-repeat;
+   
+
+}
+section#img02{
+    background-image: url('');
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    
+}
+footer{
+    background-color: var(--cor0);
+    color: white;
+    padding: 10px;
+}
+footer p{
+    text-align: center;
+    font: normal bold 16px var(--fontConteudo);
+}
+footer p a{
+    color: white; 
+    font: normal bold 16px var(--fontConteudo); 
+    text-decoration: none;  
+}
+footer p a:hover{
+    text-decoration: underline;
+    font: italic bold 18px var(--fontConteudo);
+
+    transition-duration: 0.4s;
+    background-color: var(--cor2);
+    border-radius: 5px;
+}
