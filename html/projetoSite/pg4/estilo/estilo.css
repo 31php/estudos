@@ -1,7 +1,2 @@
 @charset 'utf-8';
 
-picture img{
-    max-width: 100%;
-    display: block;
-    margin: auto;
-}
