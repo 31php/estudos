@@ -8,11 +8,12 @@
 }
 
 :root{
-    --cor0: #5C67FF;
-    --cor1: #478EFF;
-    --cor2: #47C8FF;
-    --cor3: #47FFBE;
-    --cor4: #47FFFC;
+    --cor0: blue;
+    --cor1: #e5edfdaf;
+    --cor2: #478EFF;
+    --cor3: #47C8FF;
+    --cor4: #47FFBE;
+    --cor5: #47FFFC;
 
     --fontConteudo: "Open Sans", sans-serif;
 }
@@ -20,87 +21,67 @@
     margin: 0px;
     padding: 0px;
 }
+body{
+    background-color: var(--cor1);
+}
 header{
     background-color: var(--cor0);
-    color: white;
-    padding: 30px;    
-
+    background-image: url('../imagens/goku156px.png');
+    background-position: right;
+    background-repeat: no-repeat;    
+    padding: 40px;
     text-align: center;
 }
 header h1{
-    font-family: fonteTitulo;
-    margin-bottom: 10px;
+    color: white;
+    font: italic bold 2em fonteTitulo;    
 }
 header p{
-    font-family: fonteTitulo;
+    color: white;
+    font: italic normal 18px var(--fontConteudo);
+    margin-top: 10px;
 }
 
 nav{
-    background-color: var(--cor0);       
+    background-color: var(--cor0);
+    padding: 5px;
+    margin-bottom: 0px;
 }
 nav > a{
-    color: white; 
-    padding: 3px;
-    margin-right: 7px;
-    margin-left:2px;
-
-    font: normal bold 16px var(--fontConteudo);
-
-    text-decoration: none;      
+    color: white;
+    font: normal bold 18px var(--fontConteudo);
+    text-decoration: none;
+    margin-right: 5px;
 }
 nav > a:hover{
-    text-decoration: underline;
-    font: italic bold 18px var(--fontConteudo);
-
-    transition-duration: 0.2s;
-    background-color: var(--cor2);
-    border-radius: 5px;
+    color: white;
+    font: italic bolder 20px var(--fontConteudo);
+    background-image:linear-gradient(to right,transparent, var(--cor2));
+    border-radius: 6px;
 }
 main{
+    width: 600px;
+    height: 75vw;
     padding: 10px;
+    background-color: white;
+    margin: auto;
+}
+main section{
+    font-family: var(--fontConteudo);
 }
 main section p{
-    text-align: justify;
-    margin: 10px;
-
+    padding: 10px;
 }
-section.normal{
-    background-color: white;
-    color: black;
-   
-}
-section#img01{
-    background-image: url('../imagens/goku156px.png');
-    background-position: center right;
-    background-repeat: no-repeat;
-   
-
-}
-section#img02{
-    background-image: url('');
-    background-attachment: fixed;
-    background-repeat: no-repeat; 
-    
+section.imagem{
+    background-color: var(--cor1);
+    margin: 0px -10px 0px -10px;
 }
 footer{
     background-color: var(--cor0);
-    color: white;
     padding: 10px;
+    text-align: center;
 }
 footer p{
-    text-align: center;
-    font: normal bold 16px var(--fontConteudo);
+    color: white;
 }
-footer p a{
-    color: white; 
-    font: normal bold 16px var(--fontConteudo); 
-    text-decoration: none;  
-}
-footer p a:hover{
-    text-decoration: underline;
-    font: italic bold 18px var(--fontConteudo);
 
-    transition-duration: 0.4s;
-    background-color: var(--cor2);
-    border-radius: 5px;
-}
