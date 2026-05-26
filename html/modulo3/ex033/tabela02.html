@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+        body{
+            font: italic normal 1em "DM Sans", sans-serif;
+        }
+        table{
+            width: 500px;
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        td, th{
+            border: 2px solid black;
+            padding: 10px;
+        }
+        thead, tfoot{
+            background-color: blue;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>usando tabelas grandes</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>46.081.801</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total de habitantes</td>
+                <td>0000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
