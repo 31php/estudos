@@ -15,19 +15,24 @@
             border: 2px solid black;
             border-collapse: collapse;
         }
+        td, th{
+            border: 2px solid black;
+            padding: 10px;
+        }
         caption{
             font-size: 1.5em;
             font-weight: bold;
             padding: 10px;            
             background-color: lightblue;
-        }
-        td, th{
-            border: 2px solid black;
-            padding: 10px;
-        }
+        }        
         thead, tfoot{
             background-color: blue;
             color: white;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: blue;
         }
         tbody > tr:nth-child(even){
             background-color: lightblue;
