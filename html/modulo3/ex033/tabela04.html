@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio 1</title>
     <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+        }
         table{
             border: solid 2px black;
             border-collapse: collapse;
@@ -13,36 +17,47 @@
             width: 250px;
             height: 50px;
             border: solid 2px black;
+
+            font-style: italic;
+            font-weight: bold;
+
+            text-align: center;
+        }
+        caption{
+            padding: 10px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
     <h1>Mesclando células</h1>
     <table>
+        <caption>Desafio número 1</caption>
         <tr>
             <td>1</td>
             <td>2</td>
-            <td>3</td>
+            <td rowspan="2">3</td>
             <td>4</td>
         </tr>
         <tr>
             <td>5</td>
             <td>6</td>
-            <td>7</td>
-            <td>8</td>
+            <td>7</td>            
         </tr>
         <tr>
-            <td>9</td>
-            <td>10</td>
-            <td>11</td>
-            <td>12</td>
+            <td colspan="3">8</td>
+            <td>9</td>            
         </tr>
+        <tr>
+            <td rowspan="2">10</td>
+            <td colspan="2">11</td>
+            <td>12</td>            
+        </tr> 
         <tr>
             <td>13</td>
             <td>14</td>
-            <td>15</td>
-            <td>16</td>
-        </tr> 
+            <td>15</td>            
+        </tr>
 
     </table>
 </body>
