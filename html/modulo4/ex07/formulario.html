@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+        }
+        form{
+            border: 2px solid black;
+            width: 300px;
+            height: 160px;
+            padding: 10px;
+        }
+    </style>
     
 </head>
 <body>
-   
+    <h1>Meu Primeiro formulário</h1>
+
+   <form action="formulário.php" method="get">
+    <p><label for="">Nome:</label> 
+        <input type="text" name="" id=""></p>
+    <p><label for="">Sobrenome:</label> 
+        <input type="text" name="" id=""></p>
+    <p><label for="">Idade: </label>
+        <input type="number" name="" id=""></p>
+
+        <input type="submit" value="enviar">
+
+   </form>
 </body>
 </html>
