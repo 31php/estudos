@@ -8,14 +8,8 @@
     <style>
         *{
             font-family: Arial, Helvetica, sans-serif;
-            font-style: italic;
-        }
-        form{
-            border: 2px solid black;
-            width: 300px;
-            height: 160px;
-            padding: 10px;
-        }
+            font-style: italic;            
+        }        
     </style>
     
 </head>
@@ -23,12 +17,34 @@
     <h1>Meu Primeiro formulário</h1>
 
    <form action="formulário.php" method="get">
-    <p><label for="">Nome:</label> 
-        <input type="text" name="" id=""></p>
-    <p><label for="">Sobrenome:</label> 
-        <input type="text" name="" id=""></p>
-    <p><label for="">Idade: </label>
-        <input type="number" name="" id=""></p>
+    <fieldset>
+        <legend>Dados pessoais</legend>
+        <p>
+            <label for="inome">Nome:</label> 
+            <input type="text" name="" id="inome" autocomplete="name" required>
+        </p>
+        <p>
+            <label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="" id="isobrenome" autocomplete="">
+      </p>
+        <p>
+            <label for="iidade">Idade: </label>
+            <input type="number" name="" id="iidade">
+        </p>
+        <p>
+            <label for="filiacao">Filiação: </label>
+            <input type="text" name="" id="filiacao">
+        </p>
+        <p>
+            <label for="sexo">Sexo: </label>
+            <input type="radio" name="sexo" id="mas"><label for="mas">Masculino</label>
+            <input type="radio" name="sexo" id="fem"><label for="fem">Feminino</label>
+        </p>
+    </fieldset>
+    <fieldset>
+        <legend>Documentação</legend>
+        
+    </fieldset>
 
         <input type="submit" value="enviar" onclick="enviar">
    </form>
