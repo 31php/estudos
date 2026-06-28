@@ -11,6 +11,51 @@
     <form action="" method="get" autocomplete="on">
 
         <p>
+            <label for="iest">Estado:</label>
+            <select name="" id="">
+                <option value=""selected> --- escolha ---</option>
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="ES">Espírito Santo</option>
+                </optgroup>
+
+               <optgroup label="Região Nordeste">
+                    <option value="AL">Alagoas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>            
+                    <option value="MA">Maranhão</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="SE">Sergipe</option>
+               </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão</label>
+           <input type="text" name="prof" id="iprof" list="listProf">
+           <datalist id="listProf">
+                <optgroup label="Educação">
+                    <option value="PROF">Professor</option>
+                    <option value="MON">Monitor de alunos</option>
+                    <option value="AUX.CRE">Auxiliar de Creche</option>
+                    <option value="AUX.COZ">Auxiliar de cozinha</option>
+                    <option value="MER">Merendeira</option>
+                </optgroup>
+                <option value="ADM">Administrador</option>                
+                <option value="DEV">Desenvolvedor</option>
+                <option value="CONT">Contador</option>
+           </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
