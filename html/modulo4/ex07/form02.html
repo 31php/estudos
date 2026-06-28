@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+
+    <form action="" method="" autocomplete="on">
+        <p>
+            <label for="iusu">Usuário: 
+            <input type="text" name="usuario" id="iusu" required minlength="4" maxlength="20" size="20" placeholder="nome" autocomplete="username"></label>
+        </p>
+        <p>
+            <label for="isenha">Senha: </label>
+            <input type="password" name="senha" id="isenha" required minlength="6" size="15" placeholder="minimo 6 caracteres" autocomplete="current-password">
+        </p>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="limpar">
+    </form>
+</body>
+</html>
