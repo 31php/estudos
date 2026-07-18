@@ -2,8 +2,18 @@
 
 /*todas as demais mídias*/
 @media print{ /*impressão*/
+   *{
+    font-family: 'Courier New', Courier, monospace;
+   }
     body{
-        background-image: url(../imagens/back-print.jpg);
+        background-image: url(../imagens/back-print.jpg);        
+    }
+    main{
+        border: 2px solid black;
+    }
+    main h1{
+        text-shadow: none;
+        color: black;
     }
     img#fone{ display: none;}
     img#tablet{ display: none;}
