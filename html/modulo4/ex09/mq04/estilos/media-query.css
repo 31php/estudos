@@ -1,3 +1,15 @@
 @charset "utf-8";
 
 /*todas as demais mídias*/
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#fone{ display: none;}
+    img#tablet{ display: block;}
+    img#print{ display: none;}
+    img#tv{display: none;}
+    img#pc{display: none;}
+    
+}
